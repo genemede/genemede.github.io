@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="GENEMEDE Authors">
+        <link rel="canonical" href="https://genemede.github.io/about/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>About - genemede</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">genemede</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">About</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Glossary <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../genemede_glossary.html" class="dropdown-item">GENEMEDE</a>
+</li>
+                                    
+<li>
+    <a href="../nidm_terms.html" class="dropdown-item">NIDM-Terms</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../genemede_glossary.html" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/genemede/genemede.github.io/blob/master/docs/about.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#genemede-generic-neuro-metadata-descriptors" class="nav-link">GENEMEDE (GEneric NEuro MEtadata DEscriptors)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#organization" class="nav-link">Organization</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#overview" class="nav-link">Overview</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#linking-between-files" class="nav-link">Linking between files</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="genemede-generic-neuro-metadata-descriptors">GENEMEDE (GEneric NEuro MEtadata DEscriptors)</h1>
+<p>GENEMEDE is a generic metadata framework that may be used to comprehensively describe a neuroscience experiment.</p>
+<h2 id="organization">Organization</h2>
+<table>
+<thead>
+<tr>
+<th>file type</th>
+<th>content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>metadata_types</td>
+<td>Templates for each of the categories. e.g. project_types.json contains metadata fields for the category "project".</td>
+</tr>
+<tr>
+<td>metadata_databases</td>
+<td>A list of dictionaries that contain instances of a particular category. e.g. projects.json may contain a list of projects all identifiable through their unique ID. Each of the instances follow the same structure as defined in project_types.json.</td>
+</tr>
+<tr>
+<td>resource_files</td>
+<td>Directory containing files such as technical manuals, datasheets, documents and other miscellaneous items that are referred to in the metadata descriptors. i.e. typically these files are linked using the 'resources' key.</td>
+</tr>
+<tr>
+<td>metadata_properties</td>
+<td>Directory containing json files that contain custom property values that may be unique to a particular category etc. Metadata descriptors may link to these files in order to load custom properties.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="overview">Overview</h2>
+<ul>
+<li>The metadata are stored in the form of metadata json databases grouped into various high level categories. The high level categories are represented as categories.json or category_types.json.</li>
+<li>categories.json files are the metadata database containing instances of that particular category, this is a list of dict each with the below common structure.
+  <code>[
+      {
+          "guid": "",
+          "datetime": "",
+          "name": "",
+          "description": "",
+          "mtype": "project",
+          "resources": {},
+          "properties": {},
+          "custom": {},
+          "bids": {}
+      }
+  ]</code></li>
+<li>The category_types.json files contains the template used to create the instances above. Each of the properties are always described with the below common structure.
+  <code>"property_name": {
+      "description": "",
+      "levels": null,
+      "units": null
+      },</code></li>
+<li>Current high level categories are: <code>projects, ethics, fundings, subjects, researchers, sessions, studies, devices, and labs</code>. More will be added in the future.</li>
+<li>Below table describes each of the fields used in the common structure.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>guid</td>
+<td>globally unique ID</td>
+</tr>
+<tr>
+<td>datetime</td>
+<td>date and time this entry was modified</td>
+</tr>
+<tr>
+<td>name</td>
+<td>human readable name of the entry</td>
+</tr>
+<tr>
+<td>description</td>
+<td>human readable description of the entry</td>
+</tr>
+<tr>
+<td>mtype</td>
+<td>metadata type (of of a fixed list of mtypes allowed for an entity)</td>
+</tr>
+<tr>
+<td>resources</td>
+<td>place to include links to other files, URLs, and other entities.</td>
+</tr>
+<tr>
+<td>properties</td>
+<td>List of key=value pairs that contain the metadata of interest for this entry.</td>
+</tr>
+<tr>
+<td>custom</td>
+<td>custom key=value pairs that describe the entity and that do not belong anywhere else</td>
+</tr>
+<tr>
+<td>bids</td>
+<td>List of key=value pairs as defined by BIDS specification. If a similar entry exists under properties, then an internal link to the particular entry under properties will be provided. OPTIONAL.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>The metadata type <code>'mtype': "group_type"</code> denotes a collection of devices that have been assigned to a group. These include a minimum set of devices that have to be listed and described in terms of metadata when performing an experiment.</li>
+<li>Devices are broken down into suitably generic components. These components can then be listed as a <code>group</code> in order to form a device assembly. The individual components may then be interchanged with other devices, replaced etc.</li>
+</ul>
+<h2 id="linking-between-files">Linking between files</h2>
+<p>Currently we use the below conventions to refer to other entities within and in between the metadata databases. Links are always guids to other entries.</p>
+<p>To refer to a project entry from within the projects.json from ethics.json, we can do the following,</p>
+<pre><code>&quot;resources&quot;: {
+    &quot;project&quot;: &quot;*guid.projects.json&quot;
+},
+</code></pre>
+<p>This is an asterisk <code>*</code> followed by the guid.category.json.</p>
+<p>In order to refer to an entry from within the file, we use an asterisk followed by the field and the metadata key within separated by a period.</p>
+<pre><code>&quot;bids&quot;: {
+    &quot;InstitutionName&quot;: &quot;*properties.institute&quot;,
+    &quot;InstitutionAddress&quot;: &quot;*properties.contact_address&quot;
+}
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
