@@ -11,6 +11,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://genemede.github.io/funding/</loc>
+         <lastmod>2023-02-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://genemede.github.io/license/</loc>
          <lastmod>2023-02-28</lastmod>
          <changefreq>daily</changefreq>
