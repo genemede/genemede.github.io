@@ -10,8 +10,8 @@ edit_uri: blob/master/docs/
 nav:
   - Home: index.md
   - About: about.md  
+  - License: license.md
   - Glossary: 
       - GENEMEDE: genemede_glossary.html
-      - NIDM-Terms: nidm_terms.html
 theme: 
   name: material
