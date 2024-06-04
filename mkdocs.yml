@@ -1,6 +1,8 @@
 site_name: Genemede
 nav:
   - About: about.md
+  - Components: components.md
+  - Tutorial: tutorial.md
   - Developer Guide: 'developer/'
   - Reference: 'reference/'
 
@@ -25,3 +27,6 @@ watch:
   - src
 extra_css:
   - gnmd.css
+
+markdown_extensions:
+  - attr_list

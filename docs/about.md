@@ -10,27 +10,37 @@ It is comprised of the following components:
 
 The GAT - Genemede Api and Tools - is a python project meant to be run locally. It will store data and allow for several operations, including search and export.
 
-[https://github.com/genemede/gnmd-gat](Repository at github)
+[Repository at github](https://github.com/genemede/gnmd-gat){:target="_blank"}
+
+More in-depth information [here](/components#the-gat).
 
 ### The GUI
 
 The GUI is a Web Application used to interact with the GAT APIs.
 
-[Repository at github](https://github.com/genemede/gnmd-gui)
+[Repository at github](https://github.com/genemede/gnmd-gui){:target="_blank"}
+
+It is a vue.js application, and you can build it yourself or you can use our own public deployment [here](https://genemede.github.io/gnmd-gui/){:target="_blank"}
+
+More in-depth information [here](/components#the-gui).
 
 ### The HUB
 
 <span class="gnmd-warning">(in development)</span>
 The HUB is an online platform meant to facilitate the exchange of information such as ontologies.
-[Repository at github](https://github.com/genemede/gnmd-hub)
+
+[Repository at github](https://github.com/genemede/gnmd-hub){:target="_blank"}
+
+More in-depth information [here](/components#the-hub).
 
 ### The Genemede Metatypes
 
 (in development)
 This is a collection of officially curated metatypes by the Genemede project.
 
-[Repository at github](https://github.com/genemede/gnmd-mtypes)
+[Repository at github](https://github.com/genemede/gnmd-mtypes){:target="_blank"}
 
+More in-depth information [here](/components#the-metatypes).
 
 ## What can Genemede do
 

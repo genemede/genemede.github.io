@@ -1,3 +1,25 @@
 .gnmd-warning {
-    background-color: var(--bs-warning-text-emphasis)
+    color: var(--bs-warning-text-emphasis);
+    font-weight: bold;
+}
+
+.gnmd-infotext {
+    color: var(--bs-info-text-emphasis);
+    font-style: italic;
+}
+
+.gnmd-infobox {
+    background-color: var(--bs-info-bg-subtle);
+    border: 1px dashed var(--bs-info-text-emphasis);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.gnmd-warningbox {
+    background-color: var(--bs-warning-bg-subtle);
+    border: 1px dashed var(--bs-warning-text-emphasis);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-style: italic;
 }
