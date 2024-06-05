@@ -100,33 +100,44 @@ The Genemede forms allow a wide range of data types, mirroring the specification
 
     Modules are groups of fields than can be repeatable. They can include every other type of field except modules.
 
-### Some things to try
+### Beta Testing
 
-Here's a small step by step on how to get acquainted with how Genemede works.
+Here's a brief, step-by-step guide on how to get acquainted with how Genemede works. Your feedback will be greatly appreciated. As you work through the following steps, please provide constructive feedback here <>
+
+#### Step 1
 
 Start by creating several researchers. The [researcher metatype](/reference/mtypes/researcher/) is used to define people that work in projects or laboratories.
 
-Three or four should be enough, and make sure to given them recognizable names, because you will be using these records on a different metatype soon. You can do this by going to the **Data** tab and clicking **create** on the **researcher** group.
+To start, create 3-4 researchers. TIP: give them recognizable names, because you will be using these records on a different metatype soon. You can do this by going to the **Data** tab and clicking **create** on the **researcher** group.
 
-After you're done with researchers, go back to the **Data** tab and create several **subjects**. The [subject metatype](/reference/mtypes/subject/) is used to define any subject of a project or experiment.
+#### Step 2
 
-As with researchers, they should have recognizable names, and a handful will suffice but of course you can create as many as you want.
+After you're done with creating researchers, go back to the **Data** tab and create 3-4 **subjects**. The [subject metatype](/reference/mtypes/subject/) is used to define any subject of a project or experiment.
+
+As with researchers, they should have recognizable names, and a few will suffice, but of course you can create as many as you want.
 
 The **subject** metatype is a good example of how modules work. Some of the modules are still in development but you can experiment with the *human*, *mpi* and *visual* modules, which have some examples of selection fields.
 
-Now, head back to the **Data** tab and create a [lab](/reference/mtypes/lab/) record. On the lab metatype there is a *members* field that allows you to add links to the previously created researchers. You can use the **add** button on the **Members** field header to add a new item. Select a couple of your researchers and fill in the fields if you want - they are not required fields yet.
+#### Step 3
 
-Save the record, go back to the **Data** tab and create a new [project](/reference/mtypes/project/). As with the lab record linking to researchers, you can create links to **labs** and **subjects** on a **project**. Any labs and subjects you created on the previous steps will be available for selection on the corresponding **Labs** and **Subject** fields.
+Go back to the **Data** tab and create a [lab](/reference/mtypes/lab/) record. On the lab metatype there is a *members* field that allows you to add links to the previously created **researchers**. You can use the **add** button on the **Members** field header to add a new item. Select a couple of your researchers and fill in the corresponding fields.
 
-Now that you created several data records, you can experiment with searching and filtering. If you select any metatype on the **Data** tab, you'll see a table of all existing records of that metatype, and you can do a simple name filter using the text box above the table.
+Save the record, go back to the **Data** tab.
 
-If you need more advanced search capabilities, head over to the **Search** page, where you can search for text in any field of any record.
+#### Step 4
+
+Create a new [project](/reference/mtypes/project/). As with the lab record linking to researchers, you can create links to **labs** and **subjects** on a **project**. Any labs and subjects you created on the previous steps will be available for selection on the corresponding **Labs** and **Subject** fields.
+
+#### Step 5
+
+Now that you created several data records, you can experiment with **searching** and **filtering**. If you select any metatype on the **Data** tab, you'll see a table of all existing records of that metatype, and you can do a simple name filter using the text box above the table.
+
+To try advanced search capabilities, head over to the **Search** page, where you can search for text in any field of any record.
 
 <div class="gnmd-infobox">
 The GAT api supports specifiying metatypes and fields to search on, but that functionality isn't yet fully implemented in the GUI app.
 </div>
 
-And finally, you can export all your data to a Genemede json file. Head over to the **Data** tab and you can find a button to do just that near the top of the page. Genemede will join all your records into a single json file that you can download and inspect.
+#### Step 6
 
-
-
+And finally, you can **export** all your data to a Genemede json file. Head over to the **Data** tab, and you can find a button to do just that near the top of the page. Genemede will combine all your records into a single json file, that you can download and inspect.
