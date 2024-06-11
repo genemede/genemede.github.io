@@ -36,6 +36,9 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
+                                <a href=".." class="nav-link">Genemede</a>
+                            </li>
+                            <li class="nav-item">
                                 <a href="../about/" class="nav-link">About</a>
                             </li>
                             <li class="nav-item">
@@ -64,7 +67,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
+                                <a rel="next" href="../developer/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -174,9 +177,9 @@ pip install -r requirements.txt
 
 <p>When you open the GUI application, it will try to connect to your local GAT. If successful, you will see a green checkmark along with your user information and avatar on the top right of the screen.</p>
 <p>If the GUI fails to connect to the GAT, there will instead be a red icon on the user information area.</p>
-<p><img alt="GAT connection unsuccessful" src="/img/gat_error.jpg" /></p>
+<p><img alt="GAT connection unsuccessful" src="../img/gat_error.jpg" /></p>
 <p>On the GUI homepage there will be a button that allows you to retry the connection:</p>
-<p><img alt="GAT status offline" src="/img/gat_retry.jpg" /></p>
+<p><img alt="GAT status offline" src="../img/gat_retry.jpg" /></p>
 <p>If all went well, you will now have several buttons that allow you to directly create an instance of the default metadata types:</p>
 <!-- ![Create Buttons](/img/hp_create_buttons.jpg) -->
 
@@ -223,22 +226,29 @@ More user-friendly editors are being developed to allow better functionality.
 <p>Modules are groups of fields than can be repeatable. They can include every other type of field except modules.</p>
 </li>
 </ul>
-<h3 id="some-things-to-try">Some things to try</h3>
-<p>Here's a small step by step on how to get acquainted with how Genemede works.</p>
-<p>Start by creating several researchers. The <a href="/reference/mtypes/researcher/">researcher metatype</a> is used to define people that work in projects or laboratories.</p>
-<p>Three or four should be enough, and make sure to given them recognizable names, because you will be using these records on a different metatype soon. You can do this by going to the <strong>Data</strong> tab and clicking <strong>create</strong> on the <strong>researcher</strong> group.</p>
-<p>After you're done with researchers, go back to the <strong>Data</strong> tab and create several <strong>subjects</strong>. The <a href="/reference/mtypes/subject/">subject metatype</a> is used to define any subject of a project or experiment.</p>
-<p>As with researchers, they should have recognizable names, and a handful will suffice but of course you can create as many as you want.</p>
+<h3 id="beta-testing">Beta Testing</h3>
+<p>Here's a brief, step-by-step guide on how to get acquainted with how Genemede works. Your feedback will be greatly appreciated. As you work through the following steps, please provide constructive feedback <a href="https://docs.google.com/forms/d/e/1FAIpQLSfcMm_OzRvExRklsAAwtK8ZYl7V0SfotlKADcUWsDFnPgEeCw/viewform" target="_blank">here</a>.</p>
+<h4 id="step-1">Step 1</h4>
+<p>Start by creating several researchers. The <a href="../reference/mtypes/researcher/">researcher metatype</a> is used to define people that work in projects or laboratories.</p>
+<p>To start, create 3-4 researchers. TIP: give them recognizable names, because you will be using these records on a different metatype soon. You can do this by going to the <strong>Data</strong> tab and clicking <strong>create</strong> on the <strong>researcher</strong> group.</p>
+<h4 id="step-2">Step 2</h4>
+<p>After you're done with creating researchers, go back to the <strong>Data</strong> tab and create 3-4 <strong>subjects</strong>. The <a href="../reference/mtypes/subject/">subject metatype</a> is used to define any subject of a project or experiment.</p>
+<p>As with researchers, they should have recognizable names, and a few will suffice, but of course you can create as many as you want.</p>
 <p>The <strong>subject</strong> metatype is a good example of how modules work. Some of the modules are still in development but you can experiment with the <em>human</em>, <em>mpi</em> and <em>visual</em> modules, which have some examples of selection fields.</p>
-<p>Now, head back to the <strong>Data</strong> tab and create a <a href="/reference/mtypes/lab/">lab</a> record. On the lab metatype there is a <em>members</em> field that allows you to add links to the previously created researchers. You can use the <strong>add</strong> button on the <strong>Members</strong> field header to add a new item. Select a couple of your researchers and fill in the fields if you want - they are not required fields yet.</p>
-<p>Save the record, go back to the <strong>Data</strong> tab and create a new <a href="/reference/mtypes/project/">project</a>. As with the lab record linking to researchers, you can create links to <strong>labs</strong> and <strong>subjects</strong> on a <strong>project</strong>. Any labs and subjects you created on the previous steps will be available for selection on the corresponding <strong>Labs</strong> and <strong>Subject</strong> fields.</p>
-<p>Now that you created several data records, you can experiment with searching and filtering. If you select any metatype on the <strong>Data</strong> tab, you'll see a table of all existing records of that metatype, and you can do a simple name filter using the text box above the table.</p>
-<p>If you need more advanced search capabilities, head over to the <strong>Search</strong> page, where you can search for text in any field of any record.</p>
+<h4 id="step-3">Step 3</h4>
+<p>Go back to the <strong>Data</strong> tab and create a <a href="../reference/mtypes/lab/">lab</a> record. On the lab metatype there is a <em>members</em> field that allows you to add links to the previously created <strong>researchers</strong>. You can use the <strong>add</strong> button on the <strong>Members</strong> field header to add a new item. Select a couple of your researchers and fill in the corresponding fields.</p>
+<p>Save the record, go back to the <strong>Data</strong> tab.</p>
+<h4 id="step-4">Step 4</h4>
+<p>Create a new <a href="../reference/mtypes/project/">project</a>. As with the lab record linking to researchers, you can create links to <strong>labs</strong> and <strong>subjects</strong> on a <strong>project</strong>. Any labs and subjects you created on the previous steps will be available for selection on the corresponding <strong>Labs</strong> and <strong>Subject</strong> fields.</p>
+<h4 id="step-5">Step 5</h4>
+<p>Now that you created several data records, you can experiment with <strong>searching</strong> and <strong>filtering</strong>. If you select any metatype on the <strong>Data</strong> tab, you'll see a table of all existing records of that metatype, and you can do a simple name filter using the text box above the table.</p>
+<p>To try advanced search capabilities, head over to the <strong>Search</strong> page, where you can search for text in any field of any record.</p>
 <div class="gnmd-infobox">
 The GAT api supports specifiying metatypes and fields to search on, but that functionality isn't yet fully implemented in the GUI app.
 </div>
 
-<p>And finally, you can export all your data to a Genemede json file. Head over to the <strong>Data</strong> tab and you can find a button to do just that near the top of the page. Genemede will join all your records into a single json file that you can download and inspect.</p></div>
+<h4 id="step-6">Step 6</h4>
+<p>And finally, you can <strong>export</strong> all your data to a Genemede json file. Head over to the <strong>Data</strong> tab, and you can find a button to do just that near the top of the page. Genemede will combine all your records into a single json file, that you can download and inspect.</p></div>
             </div>
         </div>
 

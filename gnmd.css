@@ -23,3 +23,13 @@
     margin-bottom: 1rem;
     font-style: italic;
 }
+
+.gnmd-homelogos {
+    /* background-color: var(--bs-body-color); */
+    /* background-color: #dee2e6; */
+}
+
+.gnmd-homelogos img {
+    /* background-color: var(--bs-body-color); */
+    background-color: #dee2e6;
+}
