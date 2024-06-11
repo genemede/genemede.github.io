@@ -42,11 +42,11 @@ When you open the GUI application, it will try to connect to your local GAT. If 
 
 If the GUI fails to connect to the GAT, there will instead be a red icon on the user information area.
 
-![GAT connection unsuccessful](/img/gat_error.jpg)
+![GAT connection unsuccessful](img/gat_error.jpg)
 
 On the GUI homepage there will be a button that allows you to retry the connection:
 
-![GAT status offline](/img/gat_retry.jpg)
+![GAT status offline](img/gat_retry.jpg)
 
 If all went well, you will now have several buttons that allow you to directly create an instance of the default metadata types:
 
@@ -102,17 +102,17 @@ The Genemede forms allow a wide range of data types, mirroring the specification
 
 ### Beta Testing
 
-Here's a brief, step-by-step guide on how to get acquainted with how Genemede works. Your feedback will be greatly appreciated. As you work through the following steps, please provide constructive feedback here <>
+Here's a brief, step-by-step guide on how to get acquainted with how Genemede works. Your feedback will be greatly appreciated. As you work through the following steps, please provide constructive feedback [here](https://docs.google.com/forms/d/e/1FAIpQLSfcMm_OzRvExRklsAAwtK8ZYl7V0SfotlKADcUWsDFnPgEeCw/viewform){:target="_blank"}.
 
 #### Step 1
 
-Start by creating several researchers. The [researcher metatype](/reference/mtypes/researcher/) is used to define people that work in projects or laboratories.
+Start by creating several researchers. The [researcher metatype](reference/mtypes/researcher.md) is used to define people that work in projects or laboratories.
 
 To start, create 3-4 researchers. TIP: give them recognizable names, because you will be using these records on a different metatype soon. You can do this by going to the **Data** tab and clicking **create** on the **researcher** group.
 
 #### Step 2
 
-After you're done with creating researchers, go back to the **Data** tab and create 3-4 **subjects**. The [subject metatype](/reference/mtypes/subject/) is used to define any subject of a project or experiment.
+After you're done with creating researchers, go back to the **Data** tab and create 3-4 **subjects**. The [subject metatype](reference/mtypes/subject.md) is used to define any subject of a project or experiment.
 
 As with researchers, they should have recognizable names, and a few will suffice, but of course you can create as many as you want.
 
@@ -120,13 +120,13 @@ The **subject** metatype is a good example of how modules work. Some of the modu
 
 #### Step 3
 
-Go back to the **Data** tab and create a [lab](/reference/mtypes/lab/) record. On the lab metatype there is a *members* field that allows you to add links to the previously created **researchers**. You can use the **add** button on the **Members** field header to add a new item. Select a couple of your researchers and fill in the corresponding fields.
+Go back to the **Data** tab and create a [lab](reference/mtypes/lab.md) record. On the lab metatype there is a *members* field that allows you to add links to the previously created **researchers**. You can use the **add** button on the **Members** field header to add a new item. Select a couple of your researchers and fill in the corresponding fields.
 
 Save the record, go back to the **Data** tab.
 
 #### Step 4
 
-Create a new [project](/reference/mtypes/project/). As with the lab record linking to researchers, you can create links to **labs** and **subjects** on a **project**. Any labs and subjects you created on the previous steps will be available for selection on the corresponding **Labs** and **Subject** fields.
+Create a new [project](reference/mtypes/project.md). As with the lab record linking to researchers, you can create links to **labs** and **subjects** on a **project**. Any labs and subjects you created on the previous steps will be available for selection on the corresponding **Labs** and **Subject** fields.
 
 #### Step 5
 

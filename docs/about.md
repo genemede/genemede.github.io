@@ -12,7 +12,7 @@ The GAT - Genemede Api and Tools - is a python project meant to be run locally. 
 
 [Repository at github](https://github.com/genemede/gnmd-gat){:target="_blank"}
 
-More in-depth information [here](/components#the-gat).
+More in-depth information [here](components.md#the-gat).
 
 ### The GUI
 
@@ -22,7 +22,7 @@ The GUI is a Web Application used to interact with the GAT APIs.
 
 It is a vue.js application, and you can build it yourself or you can use our own public deployment [here](https://genemede.github.io/gnmd-gui/){:target="_blank"}
 
-More in-depth information [here](/components#the-gui).
+More in-depth information [here](components.md#the-gui).
 
 ### The HUB
 
@@ -31,7 +31,7 @@ The HUB is an online platform meant to facilitate the exchange of information su
 
 [Repository at github](https://github.com/genemede/gnmd-hub){:target="_blank"}
 
-More in-depth information [here](/components#the-hub).
+More in-depth information [here](components.md#the-hub).
 
 ### The Genemede Metatypes
 
@@ -40,7 +40,7 @@ This is a collection of officially curated metatypes by the Genemede project.
 
 [Repository at github](https://github.com/genemede/gnmd-mtypes){:target="_blank"}
 
-More in-depth information [here](/components#the-metatypes).
+More in-depth information [here](components.md#the-metadata-types).
 
 ## What can Genemede do
 

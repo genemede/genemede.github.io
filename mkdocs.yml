@@ -1,10 +1,11 @@
 site_name: Genemede
 nav:
+  - index.md
   - About: about.md
   - Components: components.md
   - Tutorial: tutorial.md
-  - Developer Guide: 'developer/'
-  - Reference: 'reference/'
+  - Developer Guide: 'developer/index.md'
+  - Reference: 'reference/index.md'
 
 theme:
   #name: readthedocs
