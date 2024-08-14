@@ -1,0 +1,45 @@
+:root {
+    --bs-info-bg-subtle: #cdd8e3;
+    --bs-info-text-emphasis: #01182e;
+
+    --bs-danger-bg-subtle: #f4d2d3;
+
+    --bs-warning-bg-subtle: #f8ddcc;
+    --bs-warning-text-emphasis: #582200;
+}
+
+.gnmd-warning {
+    color: var(--bs-warning-text-emphasis);
+    font-weight: bold;
+}
+
+.gnmd-infotext {
+    color: var(--bs-info-text-emphasis);
+    font-style: italic;
+}
+
+.gnmd-infobox {
+    background-color: var(--bs-info-bg-subtle);
+    border: 1px dashed var(--bs-info-text-emphasis);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.gnmd-warningbox {
+    background-color: var(--bs-warning-bg-subtle);
+    border: 1px dashed var(--bs-warning-text-emphasis);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.gnmd-homelogos {
+    /* background-color: var(--bs-body-color); */
+    /* background-color: #dee2e6; */
+}
+
+.gnmd-homelogos img {
+    /* background-color: var(--bs-body-color); */
+    background-color: #dee2e6;
+}
