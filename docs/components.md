@@ -64,7 +64,7 @@ These are the contents of the current configuration file:
 ```
 
 <div class="gnmd-warningbox">
-We don't recommend changing anything except the ```user``` section at this time.
+We don't recommend changing anything except the <code>user</code> section at this time.
 </div>
 
 Your ```screen_name``` will be displayed in the GUI, and the GUI will try to use your ```email``` to display a Gravatar image if you have one configured. The ```workspace``` field will be used in the future to differentiate different data workspaces, and the ```name``` field will be used for authentication in the HUB when available.
